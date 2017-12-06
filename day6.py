@@ -47,7 +47,7 @@ f = open('06_input.txt', 'r')
 blocks = map(int, f.readline().split('\t'))
 
 # Part 1
-#memory_reallocation(blocks)
+# memory_reallocation(blocks)
 
 # Part 2
-part_2(blocks)
+# part_2(blocks)
