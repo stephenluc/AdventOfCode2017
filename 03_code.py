@@ -3,7 +3,11 @@ import math
 def spiral_memory(square):
     bottom_right_steps = int(math.ceil(math.sqrt(square)))
     bottom_right_steps = bottom_right_steps if bottom_right_steps % 2 != 0 else bottom_right_steps + 1
-    print bottom_right_steps - (pow(bottom_right_steps, 2) - square) % (bottom_right_steps - 1) - 1
+    steps = bottom_right_steps - (pow(bottom_right_steps, 2) - square) % (bottom_right_steps - 1) - 1
+    min_steps = bottom_right_steps / 2
+    if steps < min_steps:
+        steps = min_steps + abs(steps - min_steps) 
+    print steps
 
 def part_2(square):
     n = 100 
