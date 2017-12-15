@@ -1,5 +1,3 @@
-
-
 def reverse_circular_sublist(circ_list, start, end):
     sublist = []
     for i in range(start,end+1):
